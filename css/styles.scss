@@ -28,6 +28,8 @@ $reg: 400;
 $bold: 600;
 $heavy: 800;
 
+
+$xsmall:"(min-width: 540px)";
 $small:"(min-width: 768px)";
 $med:"(min-width: 1000px)";
 
@@ -234,15 +236,21 @@ img {
 }
 
 .productCopy__container__desc {
-
-	@media #{$med} {
-		margin: 0 0 30px 0;
-	}
+	margin: 0 0 30px 0;
 }
 
 .order--link {
 	margin: 20px 0 0 0;
 	@extend .serif;
+
+	a {
+		padding: 0 0 0 25px;
+
+		@media #{$xsmall} {
+			padding: 0;	
+		}
+	}
+
 }
 
 .image__container{
