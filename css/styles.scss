@@ -274,4 +274,34 @@ img {
 		}
 	}
 
+	.gallery_full {
+
+		img {
+			max-height: 230px;
+			width: auto;
+
+			@media #{$xsmall} {
+				max-height: 500px;	
+			}
+		}
+	}
+
+
+	.gallery_thumbnails {
+		margin: 20px 0 30px 0;
+		img {
+			width: 14.286%;
+			float: left;
+			padding: 0.5%;
+			opacity: 1;
+			@extend .transition;
+			backface-visibility: hidden
+		}
+
+		.selected img {
+			opacity: 0.7;
+
+		}
+	}
+
 
